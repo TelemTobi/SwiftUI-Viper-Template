@@ -12,12 +12,12 @@ import SwiftUI
 class AppCoordinator: Coordinator, MainScreenRouter {
     
     let window: UIWindow
-    var interactor: Interactable
+    var interactable: Interactable
     var childCoordinators: [Coordinator] = []
     
-    required init(interactor: Interactor) {
+    required init(interactable: Interactable) {
         self.window = UIWindow.main ?? UIWindow()
-        self.interactor = interactor
+        self.interactable = interactable
     }
     
     @MainActor
@@ -33,7 +33,7 @@ class AppCoordinator: Coordinator, MainScreenRouter {
     
     @MainActor
     var mainScreenView: MainScreenView {
-        let interactor = MainScreenInteractor(interactable: interactor)
+        let interactor = MainScreenInteractor(interactable: interactable)
         let view = MainScreenWireframe.makeView(interactor: interactor, router: self)
         return view
     }

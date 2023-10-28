@@ -11,8 +11,6 @@ struct MainScreenView: View {
     
     @ObservedObject private var presenter: MainScreenPresenter
     
-    @State private var selectedTab: Int = 0
-    
     init(presenter: MainScreenPresenter) {
         self.presenter = presenter
     }

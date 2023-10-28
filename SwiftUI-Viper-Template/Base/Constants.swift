@@ -22,5 +22,7 @@ typealias EmptyCompletion = () -> Void
 
 enum Constants {
     
-    
+    enum TimeInterval {
+        static let stubDelay: Double = 0.2
+    }
 }
