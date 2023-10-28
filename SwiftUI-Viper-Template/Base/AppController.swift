@@ -19,7 +19,7 @@ class AppController {
         let dataProviders = DataProviders(appData: appData)
         
         interactor = Interactor(appData: appData, services: services, dataProviders: dataProviders)
-        coordinator = AppCoordinator(interactor: interactor)
+        coordinator = AppCoordinator(interactable: interactor)
     }
     
     @MainActor

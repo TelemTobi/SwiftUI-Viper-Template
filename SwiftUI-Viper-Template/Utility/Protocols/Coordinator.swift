@@ -10,10 +10,10 @@ import UIKit
 protocol Coordinator: AnyObject {
     
     var window: UIWindow { get }
-    var interactor: Interactor { get set }
+    var interactable: Interactable { get set }
     var childCoordinators: [Coordinator] { get set }
     
-    init(interactor: Interactor)
+    init(interactable: Interactable)
     
     /**
      Starts a new flow.
