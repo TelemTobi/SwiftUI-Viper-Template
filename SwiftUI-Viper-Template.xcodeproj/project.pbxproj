@@ -52,11 +52,15 @@
 		7D60D3252AECEA0E007B6513 /* SwiftUI-Viper-Template */ = {
 			isa = PBXGroup;
 			children = (
-				7D60D3262AECEA0E007B6513 /* SwiftUI_Viper_TemplateApp.swift */,
-				7D60D3282AECEA0E007B6513 /* ContentView.swift */,
-				7D60D32A2AECEA10007B6513 /* Assets.xcassets */,
-				7D60D32C2AECEA10007B6513 /* SwiftUI_Viper_Template.entitlements */,
+				7D60D3352AECEDEF007B6513 /* Base */,
+				7D60D3362AECEDFB007B6513 /* Model */,
+				7D60D3372AECEE01007B6513 /* Module */,
+				7D60D3382AECEE0B007B6513 /* Networking */,
 				7D60D32D2AECEA10007B6513 /* Preview Content */,
+				7D60D3392AECEE13007B6513 /* Services */,
+				7D60D33A2AECEE1E007B6513 /* Support */,
+				7D60D33B2AECEE29007B6513 /* Utility */,
+				7D60D33C2AECEE2F007B6513 /* View */,
 			);
 			path = "SwiftUI-Viper-Template";
 			sourceTree = "<group>";
@@ -67,6 +71,130 @@
 				7D60D32E2AECEA10007B6513 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D60D3352AECEDEF007B6513 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D3262AECEA0E007B6513 /* SwiftUI_Viper_TemplateApp.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7D60D3362AECEDFB007B6513 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D60D3372AECEE01007B6513 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D3442AECEEC4007B6513 /* Main */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		7D60D3382AECEE0B007B6513 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7D60D3392AECEE13007B6513 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D60D33A2AECEE1E007B6513 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D3402AECEE7B007B6513 /* AppConfig */,
+				7D60D3412AECEE82007B6513 /* Mocks */,
+				7D60D3422AECEE87007B6513 /* Resources */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7D60D33B2AECEE29007B6513 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D33D2AECEE51007B6513 /* Extensions */,
+				7D60D33F2AECEE61007B6513 /* Modifiers */,
+				7D60D33E2AECEE57007B6513 /* Protocols */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7D60D33C2AECEE2F007B6513 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D60D33D2AECEE51007B6513 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D60D33E2AECEE57007B6513 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7D60D33F2AECEE61007B6513 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		7D60D3402AECEE7B007B6513 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D32C2AECEA10007B6513 /* SwiftUI_Viper_Template.entitlements */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		7D60D3412AECEE82007B6513 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7D60D3422AECEE87007B6513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D32A2AECEA10007B6513 /* Assets.xcassets */,
+				7D60D3432AECEE96007B6513 /* Preview */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D60D3432AECEE96007B6513 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		7D60D3442AECEEC4007B6513 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7D60D3282AECEA0E007B6513 /* ContentView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Viper-Template/SwiftUI_Viper_Template.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Viper-Template/Support/AppConfig/SwiftUI_Viper_Template.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Viper-Template/Preview Content\"";
@@ -304,7 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Viper-Template/SwiftUI_Viper_Template.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Viper-Template/Support/AppConfig/SwiftUI_Viper_Template.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Viper-Template/Preview Content\"";
