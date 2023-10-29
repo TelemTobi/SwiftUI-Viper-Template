@@ -21,12 +21,8 @@ class AppCoordinator: Coordinator, MainScreenRouter {
     }
     
     @MainActor
-    func start() {
-        
-    }
-    
-    func finish() {
-        
+    var rootView: any View {
+        mainScreenView
     }
     
     // MARK: - Main Screen

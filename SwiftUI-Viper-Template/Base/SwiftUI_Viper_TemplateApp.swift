@@ -14,7 +14,7 @@ struct SwiftUI_Viper_TemplateApp: App {
     
     var body: some Scene {
         WindowGroup {
-            appController.rootView
+            appController.rootView.toAnyView
         }
     }
 }

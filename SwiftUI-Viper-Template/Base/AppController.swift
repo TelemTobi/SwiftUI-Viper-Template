@@ -23,25 +23,7 @@ class AppController {
     }
     
     @MainActor
-    var rootView: some View {
-        coordinator.mainScreenView
+    var rootView: any View {
+        coordinator.rootView
     }
 }
-
-#if DEBUG
-extension AppController {
-    
-    enum Preview {
-        
-        static var interactor: Interactor {
-            let appData = AppData()
-            return Interactor(
-                appData: appData,
-                services: Services(),
-                dataProviders: DataProviders(appData: appData)
-            )
-        }
-        
-    }
-}
-#endif

@@ -53,6 +53,8 @@
 		7D60D3A52AECF5C5007B6513 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3A42AECF5C5007B6513 /* Config.swift */; };
 		7D60D3A72AECF643007B6513 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3A62AECF643007B6513 /* Mocks.swift */; };
 		7D60D3A92AEE34E6007B6513 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3A82AEE34E6007B6513 /* String+Extension.swift */; };
+		7D60D3AE2AEED6FE007B6513 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3AD2AEED6FE007B6513 /* View+Extension.swift */; };
+		7D60D3B02AEEE1D0007B6513 /* PreviewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3AF2AEEE1D0007B6513 /* PreviewUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		7D60D3AA2AEE361A007B6513 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7D60D3AB2AEE3624007B6513 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		7D60D3AC2AEE36B0007B6513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D60D3AD2AEED6FE007B6513 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		7D60D3AF2AEEE1D0007B6513 /* PreviewUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				7D60D32E2AECEA10007B6513 /* Preview Assets.xcassets */,
+				7D60D3AF2AEEE1D0007B6513 /* PreviewUtilities.swift */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 		7D60D36E2AECF1E2007B6513 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7D60D3AD2AEED6FE007B6513 /* View+Extension.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -473,11 +479,13 @@
 				7D60D34B2AECEFB8007B6513 /* Services.swift in Sources */,
 				7D60D35B2AECF124007B6513 /* MainScreenInteractor.swift in Sources */,
 				7D60D3A12AECF439007B6513 /* APIError.swift in Sources */,
+				7D60D3B02AEEE1D0007B6513 /* PreviewUtilities.swift in Sources */,
 				7D60D3702AECF1E2007B6513 /* UIImage+BlurHash.swift in Sources */,
 				7D60D3A22AECF439007B6513 /* Errorable.swift in Sources */,
 				7D60D35A2AECF124007B6513 /* MainScreenWireframe.swift in Sources */,
 				7D60D3272AECEA0E007B6513 /* SwiftUI_Viper_TemplateApp.swift in Sources */,
 				7D60D35D2AECF124007B6513 /* MainScreenView.swift in Sources */,
+				7D60D3AE2AEED6FE007B6513 /* View+Extension.swift in Sources */,
 				7D60D3532AECF070007B6513 /* AppCoordinator.swift in Sources */,
 				7D60D3772AECF1E2007B6513 /* Data+Extension.swift in Sources */,
 				7D60D3992AECF439007B6513 /* NetworkManager.swift in Sources */,
