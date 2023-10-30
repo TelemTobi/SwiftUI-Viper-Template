@@ -145,13 +145,13 @@
 			children = (
 				7D60D3AC2AEE36B0007B6513 /* Info.plist */,
 				7D60D3352AECEDEF007B6513 /* Base */,
-				7D60D3362AECEDFB007B6513 /* Model */,
+				7D60D3B12AEFA9EB007B6513 /* Model */,
 				7D60D3372AECEE01007B6513 /* Module */,
 				7D60D3382AECEE0B007B6513 /* Networking */,
-				7D60D3392AECEE13007B6513 /* Services */,
+				7D60D3B42AEFAA2A007B6513 /* Services */,
 				7D60D33A2AECEE1E007B6513 /* Support */,
 				7D60D33B2AECEE29007B6513 /* Utility */,
-				7D60D33C2AECEE2F007B6513 /* View */,
+				7D60D3B52AEFAA48007B6513 /* View */,
 			);
 			path = "SwiftUI-Viper-Template";
 			sourceTree = "<group>";
@@ -168,13 +168,6 @@
 				7D60D3262AECEA0E007B6513 /* SwiftUI_Viper_TemplateApp.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		7D60D3362AECEDFB007B6513 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7D60D3372AECEE01007B6513 /* Module */ = {
@@ -201,13 +194,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		7D60D3392AECEE13007B6513 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		7D60D33A2AECEE1E007B6513 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,13 +212,6 @@
 				7D60D33E2AECEE57007B6513 /* Protocols */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		7D60D33C2AECEE2F007B6513 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		7D60D33D2AECEE51007B6513 /* Extensions */ = {
@@ -385,6 +364,27 @@
 				7D60D3952AECF439007B6513 /* PredefinedError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		7D60D3B12AEFA9EB007B6513 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D60D3B42AEFAA2A007B6513 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D60D3B52AEFAA48007B6513 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
