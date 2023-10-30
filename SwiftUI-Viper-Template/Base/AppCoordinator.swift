@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// TODO: Come up with a better coordinator pattern for SwiftUI ⚠️
-
 class AppCoordinator: Coordinator, MainScreenRouter {
     
     let window: UIWindow
@@ -28,7 +26,7 @@ class AppCoordinator: Coordinator, MainScreenRouter {
     // MARK: - Main Screen
     
     @MainActor
-    var mainScreenView: MainScreenView {
+    private var mainScreenView: any View {
         let interactor = MainScreenInteractor(interactable: interactable)
         let view = MainScreenWireframe.makeView(interactor: interactor, router: self)
         return view

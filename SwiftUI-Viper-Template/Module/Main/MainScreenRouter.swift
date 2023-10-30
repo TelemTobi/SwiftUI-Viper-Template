@@ -5,7 +5,7 @@
 //  Created by Telem Tobi on 28/10/2023.
 //
 
-import Foundation
+import SwiftUI
 
 protocol MainScreenRouter where Self: Coordinator {
     
