@@ -55,6 +55,9 @@
 		7D60D3A92AEE34E6007B6513 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3A82AEE34E6007B6513 /* String+Extension.swift */; };
 		7D60D3AE2AEED6FE007B6513 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3AD2AEED6FE007B6513 /* View+Extension.swift */; };
 		7D60D3B02AEEE1D0007B6513 /* PreviewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D60D3AF2AEEE1D0007B6513 /* PreviewUtilities.swift */; };
+		7DF17D932AF01FBF00635B62 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF17D922AF01FBF00635B62 /* DemoView.swift */; };
+		7DF17D972AF0203100635B62 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF17D962AF0203100635B62 /* DemoService.swift */; };
+		7DF17D9A2AF0205D00635B62 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF17D992AF0205D00635B62 /* DemoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,9 +107,12 @@
 		7D60D3A82AEE34E6007B6513 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7D60D3AA2AEE361A007B6513 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7D60D3AB2AEE3624007B6513 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		7D60D3AC2AEE36B0007B6513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D60D3AC2AEE36B0007B6513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D60D3AD2AEED6FE007B6513 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		7D60D3AF2AEEE1D0007B6513 /* PreviewUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUtilities.swift; sourceTree = "<group>"; };
+		7DF17D922AF01FBF00635B62 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		7DF17D962AF0203100635B62 /* DemoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoService.swift; sourceTree = "<group>"; };
+		7DF17D992AF0205D00635B62 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,12 +149,11 @@
 		7D60D3252AECEA0E007B6513 /* SwiftUI-Viper-Template */ = {
 			isa = PBXGroup;
 			children = (
-				7D60D3AC2AEE36B0007B6513 /* Info.plist */,
 				7D60D3352AECEDEF007B6513 /* Base */,
-				7D60D3B12AEFA9EB007B6513 /* Model */,
+				7DF17D982AF0205000635B62 /* Model */,
 				7D60D3372AECEE01007B6513 /* Module */,
 				7D60D3382AECEE0B007B6513 /* Networking */,
-				7D60D3B42AEFAA2A007B6513 /* Services */,
+				7DF17D952AF0202200635B62 /* Services */,
 				7D60D33A2AECEE1E007B6513 /* Support */,
 				7D60D33B2AECEE29007B6513 /* Utility */,
 				7D60D3B52AEFAA48007B6513 /* View */,
@@ -245,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				7D60D32C2AECEA10007B6513 /* SwiftUI_Viper_Template.entitlements */,
+				7D60D3AC2AEE36B0007B6513 /* Info.plist */,
 				7D60D3A42AECF5C5007B6513 /* Config.swift */,
 				7D60D3AA2AEE361A007B6513 /* Debug.xcconfig */,
 				7D60D3AB2AEE3624007B6513 /* Release.xcconfig */,
@@ -366,25 +372,28 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		7D60D3B12AEFA9EB007B6513 /* Model */ = {
+		7D60D3B52AEFAA48007B6513 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DF17D922AF01FBF00635B62 /* DemoView.swift */,
 			);
-			path = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
-		7D60D3B42AEFAA2A007B6513 /* Services */ = {
+		7DF17D952AF0202200635B62 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7DF17D962AF0203100635B62 /* DemoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		7D60D3B52AEFAA48007B6513 /* View */ = {
+		7DF17D982AF0205000635B62 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7DF17D992AF0205D00635B62 /* DemoModel.swift */,
 			);
-			path = View;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,12 +478,14 @@
 				7D60D3502AECF03D007B6513 /* Coordinator.swift in Sources */,
 				7D60D34C2AECEFB8007B6513 /* Constants.swift in Sources */,
 				7D60D3A52AECF5C5007B6513 /* Config.swift in Sources */,
+				7DF17D932AF01FBF00635B62 /* DemoView.swift in Sources */,
 				7D60D34A2AECEFB8007B6513 /* Interactor.swift in Sources */,
 				7D60D3962AECF439007B6513 /* Networking.swift in Sources */,
 				7D60D3A72AECF643007B6513 /* Mocks.swift in Sources */,
 				7D60D3722AECF1E2007B6513 /* Int+Extension.swift in Sources */,
 				7D60D3592AECF124007B6513 /* MainScreenRouter.swift in Sources */,
 				7D60D3A92AEE34E6007B6513 /* String+Extension.swift in Sources */,
+				7DF17D972AF0203100635B62 /* DemoService.swift in Sources */,
 				7D60D39C2AECF439007B6513 /* DataProviders.swift in Sources */,
 				7D60D34B2AECEFB8007B6513 /* Services.swift in Sources */,
 				7D60D35B2AECF124007B6513 /* MainScreenInteractor.swift in Sources */,
@@ -483,6 +494,7 @@
 				7D60D3702AECF1E2007B6513 /* UIImage+BlurHash.swift in Sources */,
 				7D60D3A22AECF439007B6513 /* Errorable.swift in Sources */,
 				7D60D35A2AECF124007B6513 /* MainScreenWireframe.swift in Sources */,
+				7DF17D9A2AF0205D00635B62 /* DemoModel.swift in Sources */,
 				7D60D3272AECEA0E007B6513 /* SwiftUI_Viper_TemplateApp.swift in Sources */,
 				7D60D35D2AECF124007B6513 /* MainScreenView.swift in Sources */,
 				7D60D3AE2AEED6FE007B6513 /* View+Extension.swift in Sources */,
