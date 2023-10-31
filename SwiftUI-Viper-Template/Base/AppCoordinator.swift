@@ -9,12 +9,10 @@ import SwiftUI
 
 class AppCoordinator: Coordinator, MainScreenRouter {
     
-    let window: UIWindow
     var interactable: Interactable
     var childCoordinators: [Coordinator] = []
     
     required init(interactable: Interactable) {
-        self.window = UIWindow.main ?? UIWindow()
         self.interactable = interactable
     }
     
