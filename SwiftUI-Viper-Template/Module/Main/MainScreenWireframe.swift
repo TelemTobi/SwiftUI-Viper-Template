@@ -10,8 +10,8 @@ import SwiftUI
 class MainScreenWireframe {
     
     @MainActor
-    static func makeView(interactor: MainScreenInteractable, router: MainScreenRouter?) -> any View {
+    static func makeView(interactor: MainScreenInteractable, router: MainScreenRouter?) -> some View {
         let presenter = MainScreenPresenter(interactor: interactor, router: router)
-        return MainScreenView().environmentObject(presenter)
+        return MainScreenView(presenter: presenter)
     }
 }

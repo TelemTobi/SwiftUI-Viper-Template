@@ -9,7 +9,11 @@ import SwiftUI
 
 struct MainScreenView: View {
     
-    @EnvironmentObject private var presenter: MainScreenPresenter
+    @ObservedObject private var presenter: MainScreenPresenter
+    
+    init(presenter: MainScreenPresenter) {
+        self.presenter = presenter
+    }
     
     var body: some View {
         VStack {
@@ -27,5 +31,5 @@ struct MainScreenView: View {
     let interactor = MainScreenInteractor(interactable: AppController.Preview.interactor)
     let presenter = MainScreenPresenter(interactor: interactor, router: nil)
 
-    return MainScreenView().environmentObject(presenter)
+    return MainScreenView(presenter: presenter)
 }
