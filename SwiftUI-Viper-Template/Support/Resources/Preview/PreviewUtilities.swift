@@ -1,10 +1,3 @@
-//
-//  PreviewUtilities.swift
-//  SwiftUI-Viper-Template
-//
-//  Created by Telem Tobi on 29/10/2023.
-//
-
 import Foundation
 
 extension AppController {

@@ -1,10 +1,3 @@
-//
-//  OnFirstAppear.swift
-//  SwiftUI-Viper-Template
-//
-//  Created by Telem Tobi on 28/10/2023.
-//
-
 import SwiftUI
 
 fileprivate struct OnFirstAppearModifier: ViewModifier {
